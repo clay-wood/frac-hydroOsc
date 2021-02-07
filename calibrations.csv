@@ -1,0 +1,30 @@
+Device,Type,Rod Length,Gain,Calibration,Units,Updated,Who
+Load Cell,"44mm Solid Vertical ",,High,328.6554705,mV/kN,1/14/20,Bolton/Krogh/Shreedharan/Wood
+Load Cell,"44mm Solid Vertical ",,Low,33.0709703,mV/kN,1/14/20,Bolton/Krogh/Shreedharan/Wood
+Load Cell,44mm Solid Horizontal,,High,119.3032689,mV/kN,1/14/20,Bolton/Krogh/Shreedharan/Wood
+Load Cell,44mm Solid Horizontal,,Low,12.20973343,mV/kN,1/14/20,Bolton/Krogh/Shreedharan/Wood
+Load Cell,62mm Vertical,,,19.72979,mV/kN,7/25/18,Witham/Wood/Shreedharan
+Load Cell,62mm Horizontal,,High,172.0985,mV/kN,7/25/18,Witham/Wood/Shreedharan
+Load Cell,62mm Horizontal,,Low,18.561,mV/kN,7/25/18,Witham/Wood/Shreedharan
+DCDT,"Trans-Tek 1"" V",,High,0.119017,mm/V,11/28/16,Madara/Kenigsberg
+DCDT,"Trans-Tek 1"" V",,Medium,1.613443,mm/V,,
+DCDT,"Trans-Tek 1"" V",,Low,1.255347,mm/V,11/28/16,Madara/Kenigsberg
+DCDT,"Trans-Tek 2"" V (new)",,Low,0.56957339,mm/V,1/14/20,Bolton/Krogh/Shreedharan/Wood
+DCDT,"Trans-Tek 2"" V (new)",,High,2.849814762,mm/V,1/14/20,Bolton/Krogh/Shreedharan/Wood
+DCDT,Horizontal DCDT,Short,High,0.6544506268917897,mm/V,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+DCDT,Horizontal DCDT,Long,High,0.6208,mm/v,1/14/20,Bolton/Krogh/Shreedharan/Wood
+DCDT,Horizontal DCDT,Short,Low,1.3188,mm/v,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+DCDT,Horizontal DCDT,Long,Low,1.2692,mm/v,1/14/20,Bolton/Krogh/Shreedharan/Wood
+DCDT,"Onboard TT 1""",,Output A,1.7297,mm/V,1/14/20,Bolton/Krogh/Shreedharan/Wood
+DCDT,"Onboard TT 1""",,Output B,1.7297,mm/V,1/15/20,Bolton/Krogh/Shreedharan/Wood
+DCDT,"Onboard TT 0.5""",,Output A,2.2765,mm/V,1/14/20,Bolton/Krogh/Shreedharan/Wood
+DCDT,"Onboard TT 0.5""",,Output B,2.2765,mm/V,,
+DCDT,Internal DCDT,,,1.122977138,mm/V,1/14/20,Bolton/Krogh/Shreedharan/Wood
+Ptrdx,Pc_trdx,,"None",0.14556041,V/MPa,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+LVDT,Pc_lvdt,,"None",29.49852507,mm/V,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+Ptrdx,Ppa trdx,,High,1.517680983,V/MPa,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+Ptrdx,Ppa trdx,,Low,0.147470875,V/MPa,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+LVDT,Ppa lvdt,,"None",26.73796791,mm/V,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+Ptrdx,Ppb trdx,,High,1.483019428,V/MPa,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+Ptrdx,Ppb trdx,,Low,0.146008848,V/MPa,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
+LVDT,Ppb lvdt,,"None",26.88172043,mm/V,6/27/19,Bolton/Kenigsberg/Shreedharan/Wood
