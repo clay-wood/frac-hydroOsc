@@ -1,9 +1,0 @@
-#!/bin/bash
-
-make-footer() {
-
-    tail -c -336 $1 | hexdump -v > sample.ftr
-    return sample.ftr
-}
-
-make-footer
