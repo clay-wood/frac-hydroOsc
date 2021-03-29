@@ -1,0 +1,18 @@
+p5483 Reduced Data Header
+Records: 3023431
+
+Time
+Int Disp
+Sync
+norm disp
+norm stress
+pc disp
+pc press
+ppa disp
+ppa press
+ppb disp
+ppb press
+effNS
+Qa
+Qb
+perm
