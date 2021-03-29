@@ -10,3 +10,6 @@ sample.ftr
 .DS_Store
 .vscode/
 p5384_mechdat_reduced.zip
+p5289_temp/
+mat_ac_analysis/
+.html
