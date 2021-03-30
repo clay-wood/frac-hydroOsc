@@ -16,3 +16,5 @@ mechData/p5483_mechdat.csv
 mechData/p5483_mechdat_reduced.csv
 mechData/p5483_mechdat_reduced.npz
 py_ac_analysis/Results_analysis/*.npz
+py_ac_analysis/p5483_Thickness.npz
+py_ac_analysis/p5483_thickness.ipynb
