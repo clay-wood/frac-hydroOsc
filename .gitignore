@@ -15,3 +15,4 @@ mat_ac_analysis/
 mechData/p5483_mechdat.csv
 mechData/p5483_mechdat_reduced.csv
 mechData/p5483_mechdat_reduced.npz
+py_ac_analysis/Results_analysis/*.npz
