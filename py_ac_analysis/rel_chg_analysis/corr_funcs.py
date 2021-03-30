@@ -60,13 +60,13 @@ def recovFitter(pp_start, pp_end, Time, param, label):
     
     for aa in range(len(pp_end)):
         fin_idx = np.isfinite(param[pp_end[aa]:pp_start[aa]])
-        p[aa,0:2] = np.polyfit(np.log10(Time[pp_end[aa]:pp_start[aa]][fin_idx]), param[pp_end[aa]:pp_start[aa]][fin_idx], 1)
-        q[aa,:] = np.polyval(p[aa,0:2], np.log10(Time[pp_end[aa]:pp_start[aa]]))
+        p[aa,0:2] = np.polyfit(np.log10(Time[pp_end[aa]:pp_start[aa]][fin_idx]-Time[pp_end[aa]:pp_start[aa]][fin_idx][0]+0.01), param[pp_end[aa]:pp_start[aa]][fin_idx], 1)
+        q[aa,:] = np.polyval(p[aa,0:2], np.log10(Time[pp_end[aa]:pp_start[aa]]-Time[pp_end[aa]:pp_start[aa]][0]+0.01))
         p[aa,2] = r2_score(param[pp_end[aa]:pp_start[aa]][fin_idx], q[aa,:][fin_idx])
-        
+
         fig = figure(tools='pan,box_zoom,undo,hover,crosshair') 
-        fig.circle(np.log10(Time[pp_end[aa]:pp_start[aa]][fin_idx]), param[pp_end[aa]:pp_start[aa]][fin_idx], size=5, fill_color='black', line_color="black")
-        fig.line(np.log10(Time[pp_end[aa]:pp_start[aa]]), q[aa,:], line_color="red")
+        fig.circle(np.log10(Time[pp_end[aa]:pp_start[aa]][fin_idx]-Time[pp_end[aa]:pp_start[aa]][fin_idx][0]+0.01), param[pp_end[aa]:pp_start[aa]][fin_idx], size=5, fill_color='black', line_color="black")
+        fig.line(np.log10(Time[pp_end[aa]:pp_start[aa]]-Time[pp_end[aa]:pp_start[aa]][0]+0.01), q[aa,:], line_color="red")
         fig.yaxis.axis_label = label+' recov'
         fig.xaxis.axis_label = 'Time (s)'
 
