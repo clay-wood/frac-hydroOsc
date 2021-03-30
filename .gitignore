@@ -12,4 +12,6 @@ sample.ftr
 p5384_mechdat_reduced.zip
 p5289_temp/
 mat_ac_analysis/
-.html
+mechData/p5483_mechdat.csv
+mechData/p5483_mechdat_reduced.csv
+mechData/p5483_mechdat_reduced.npz
