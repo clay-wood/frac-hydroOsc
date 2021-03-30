@@ -1,0 +1,1 @@
+for f in *.ac; do mv "$f" "WF_$f"; done
