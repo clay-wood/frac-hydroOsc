@@ -47,7 +47,7 @@ def projectionProcedure(t, V_HF, strain, Nharm, fn):
     A_strain = np.zeros(size(T,2),1); # coefficients
     # norm f to 1
     # dCoverC=dCoverC/sqrt(dot(dCoverC,dCoverC));
-    for jjj = 1:size(T,2)    
+    for jjj = 0:size(T,2)    
         A(jjj) = sum(T(:,jjj).*dCoverC); # dCoverC is the signal you want to analyze (dC/C)
         projection = projection + A(jjj)*T(:,jjj);   
         A_strain(jjj) = sum(T(:,jjj).*dCoverC_strain); # dCoverC is the signal you want to analyze (dC/C)

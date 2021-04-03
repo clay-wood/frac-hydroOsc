@@ -64,7 +64,7 @@ def recovFitter(pp_start, pp_end, Time, param, label):
         q[aa,:] = np.polyval(p[aa,0:2], np.log10(Time[pp_end[aa]:pp_start[aa]]-Time[pp_end[aa]:pp_start[aa]][0]+0.01))
         p[aa,2] = r2_score(param[pp_end[aa]:pp_start[aa]][fin_idx], q[aa,:][fin_idx])
 
-        fig = figure(tools='pan,box_zoom,undo,hover,crosshair') 
+        fig = figure(title = 'r^2 = '+str(round(p[aa,2],3)), tools='pan,box_zoom,undo,hover,crosshair') 
         fig.circle(np.log10(Time[pp_end[aa]:pp_start[aa]][fin_idx]-Time[pp_end[aa]:pp_start[aa]][fin_idx][0]+0.01), param[pp_end[aa]:pp_start[aa]][fin_idx], size=5, fill_color='black', line_color="black")
         fig.line(np.log10(Time[pp_end[aa]:pp_start[aa]]-Time[pp_end[aa]:pp_start[aa]][0]+0.01), q[aa,:], line_color="red")
         fig.yaxis.axis_label = label+' recov'
@@ -74,3 +74,11 @@ def recovFitter(pp_start, pp_end, Time, param, label):
         show(fig)
     
     return q, p
+
+
+def detrend(x, y):
+    fin_idx = np.isfinite(y)
+    p = np.polyfit(x[fin_idx], y[fin_idx], 1)
+    q = np.polyval(p, x)
+    y_detrend = (y - q) + y[fin_idx][0]
+    return y_detrend
