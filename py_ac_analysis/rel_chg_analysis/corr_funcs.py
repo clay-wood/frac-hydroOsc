@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import scipy.io as sio
 from sklearn.metrics import r2_score
+from scipy.signal import butter,filtfilt# Filter requirements.
 
 from bokeh.plotting import figure, show, save
 from bokeh.io import output_notebook, output_file, reset_output
@@ -82,3 +83,13 @@ def detrend(x, y):
     q = np.polyval(p, x)
     y_detrend = (y - q) + y[fin_idx][0]
     return y_detrend
+
+
+def butter_filter(data, cutoff, fs, order, hilo):
+#     print("Cutoff freq " + str(cutoff))
+    nyq = 0.5 * fs # Nyquist Frequency
+    normal_cutoff = cutoff / nyq
+    # Get the filter coefficients 
+    b, a = butter(order, normal_cutoff, btype=hilo, analog=False)
+    y = filtfilt(b, a,data)
+    return y
